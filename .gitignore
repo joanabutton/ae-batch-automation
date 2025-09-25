@@ -1,0 +1,11 @@
+# Ignore AE and render junk
+*.aep
+*.avi
+*.mp4
+*.mov
+*.png
+*.jpg
+ae_batch.json
+ae_video_bot/
+renders/
+input/
