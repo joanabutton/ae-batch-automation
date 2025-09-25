@@ -62,31 +62,25 @@ ae_video_bot/
    python run_batch.py
 
 3. After Effects will:
+  Open the template.
+  Process each input pair.
+  Render Aoife.avi, Charlie.avi, etc. into renders/.
+  Save/append the results into ae_faces_and_names_master.aep.
+  The input/ files remain untouched.
 
-Open the template.
-
-Process each input pair.
-
-Render Aoife.avi, Charlie.avi, etc. into renders/.
-
-Save/append the results into ae_faces_and_names_master.aep.
-
-The input/ files remain untouched.
-
-Technical Notes
+## Technical Notes
 
 Comp names → Each duplicated comp is renamed as Intro_Template_Comp [NAME].
-
 Filename sanitization → Spaces and special characters in names are replaced with _ for safe filenames.
-
 Output module → Uses AE’s Lossless template by default (can be changed).
 
-Requirements:
+## Requirements
 
 Adobe After Effects 2023+
 Python 3.x
 
-Troubleshooting:
+## Troubleshooting
+
 Disk Cache warnings
 If AE shows acecache errors, clear cache via:
 AE Preferences → Media & Disk Cache → Empty Disk Cache
@@ -96,11 +90,11 @@ Harmless; resolved by removing undo groups in JSX.
 File missing warnings
 Ensure every .png/.jpg has a corresponding .txt.
 
-Future Extensions
-
+## Future Extensions
 Add MP4/H.264 export preset.
 Write a log file (batch_log.txt) of processed jobs.
 Pull job data from Google Sheets or Notion.
 Add GUI front-end for drag-and-drop batches.
 
-Author: Joana Button
+**Author:** Joana Button
+
